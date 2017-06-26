@@ -32,7 +32,7 @@ main() {
   unset CHECK_ZSH_INSTALLED
 
   if [ ! -n "$ZSH" ]; then
-    ZSH=~/.oh-my-zsh
+    ZSH=~/.dotfiles/.oh-my-zsh
   fi
 
   if [ -d "$ZSH" ]; then
@@ -74,7 +74,7 @@ main() {
   fi
 
   printf "${BLUE}Using the Oh My Zsh template file and adding it to ~/.zshrc${NORMAL}\n"
-  cp $ZSH/templates/zshrc.zsh-template ~/.zshrc
+  ln -sfv $ZSH/templates/zshrc.zsh-template ~/.zshrc
   sed "/^export ZSH=/ c\\
   export ZSH=$ZSH
   " ~/.zshrc > ~/.zshrc-omztemp
