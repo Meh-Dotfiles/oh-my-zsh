@@ -81,8 +81,8 @@ main() {
   ln -sfv $ZSH ~/.oh-my-zsh
   sed "/^export ZSH=/ c\\
   export ZSH=$ZSH
-  " ~/.zshrc > "$ZSH/templates/zshrc-$(cat /etc/hostname)"
-  ln -sfv $ZSH/templates/zshrc-$(cat/etc/hostname) ~/.zshrc
+  " ~/.zshrc > "$ZSH/templates/zshrc"
+  ln -sfv $ZSH/templates/zshrc ~/.zshrc
 
   # If this user's login shell is not already "zsh", attempt to switch.
   TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
