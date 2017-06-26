@@ -32,6 +32,9 @@ main() {
   unset CHECK_ZSH_INSTALLED
 
   if [ ! -n "$ZSH" ]; then
+    if [ ! -d ~/.dotfiles ]; then
+	mkdir ~/.dotfiles
+    fi
     ZSH=~/.dotfiles/.oh-my-zsh
   fi
 
