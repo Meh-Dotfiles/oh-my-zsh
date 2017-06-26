@@ -11,11 +11,11 @@ export $ZSH/config/locale.meh
 ZSH_THEME="meh"
 
 # Plugins plugins=(git)
-source $ZSH/oh-my-zsh.sh
+. $ZSH/oh-my-zsh.sh
 
 # SSH KEYS
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Alias
-source $ZSH/config/alias.meh
+. $ZSH/config/alias.meh
 
