@@ -1,33 +1,21 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Locale to es_ES.UTF-8
-export ~/$config/config/locale.meh
-
 # Path to your oh-my-zsh installation.
 export ZSH=/home/sergi/.oh-my-zsh
 
-  ZSH_THEME="meh"
+# Locale to es_ES.UTF-8
+export $ZSH/config/locale.meh
 
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-#COMPLETION_WAITING_DOTS="true"
-
+#ZSH theme
+ZSH_THEME="meh"
 
 # Plugins plugins=(git)
-
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-
-# ssh
+# SSH KEYS
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# alias
-export ~/$config/config/alias.meh
-#alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Alias
+source $ZSH/config/alias.meh
 
