@@ -9,6 +9,9 @@ if [ -d ~/.oh-my-zsh ]; then
   rm -rf ~/.oh-my-zsh
 fi
 
+if [ -d ~/.dotfiles/.oh-my-zsh ]; then
+  rm -rf ~/.dotfiles/.oh-my-zsh
+fi
 echo "Looking for original zsh config..."
 if [ -f ~/.zshrc.pre-oh-my-zsh ] || [ -h ~/.zshrc.pre-oh-my-zsh ]; then
   echo "Found ~/.zshrc.pre-oh-my-zsh -- Restoring to ~/.zshrc";
