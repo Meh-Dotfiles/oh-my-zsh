@@ -1,0 +1,7 @@
+## Example alias
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias l="ls -l"
+alias ll="ls la"
+alias ..='cd ..'
+
