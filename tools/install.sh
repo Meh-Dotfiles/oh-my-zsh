@@ -81,8 +81,8 @@ main() {
   ln -sfv $ZSH ~/.oh-my-zsh
   sed "/^export ZSH=/ c\\
   export ZSH=$ZSH
-  " ~/.zshrc > $ZSH/templates/zshrc-omztemp
-  ln -sfv $ZSH/templates/zshrc-omztemp ~/.zshrc
+  " ~/.zshrc > $ZSH/templates/zshrc-$(cat/etc/hostname)
+  ln -sfv $ZSH/templates/$(cat/etc/hostname ~/.zshrc
 
   # If this user's login shell is not already "zsh", attempt to switch.
   TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
@@ -113,6 +113,7 @@ main() {
   echo ''
   echo 'p.p.s. Get stickers and t-shirts at http://shop.planetargon.com.'
   echo ''
+  echo 'p.p.p.s Please make git add & commit to zshrc'
   printf "${NORMAL}"
   env zsh
 }
