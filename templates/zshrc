@@ -2,19 +2,21 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/meh/.dotfiles/.oh-my-zsh
+  export ZSH=/home/sergi/.dotfiles/.oh-my-zsh
 
 # Locale to es_ES.UTF-8
-. $ZSH/config/locale.meh
+  . $ZSH/config/locale.meh
 
-#ZSH theme
-ZSH_THEME="meh"
-
+#ZSH 
+  # Themes 
+    ZSH_THEME="meh"
+  # Disable updates
+    DISABLE_AUTO_UPDATE=true
 # Plugins plugins=(git)
-. $ZSH/oh-my-zsh.sh
+  . $ZSH/oh-my-zsh.sh
 
 # SSH KEYS
-export SSH_KEY_PATH="~/.ssh/rsa_id"
+  export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Alias
 . $ZSH/config/alias.meh
