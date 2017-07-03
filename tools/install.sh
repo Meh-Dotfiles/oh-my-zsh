@@ -35,7 +35,7 @@ main() {
     if [ ! -d ~/.dotfiles ]; then
 	mkdir ~/.dotfiles
     fi
-    ZSH=~/.dotfiles/.oh-my-zsh
+    ZSH=~/.dotfiles/oh-my-zsh
   fi
 
   if [ -d "$ZSH" ]; then
